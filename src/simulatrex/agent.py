@@ -95,6 +95,10 @@ class LLMAgent(BaseAgent):
             self.cognitive_model = OpenAILanguageModel(
                 model_id=CognitiveModel.GPT_4, agent_id=self.id
             )
+        elif self.cognitive_model_id == CognitiveModel.GPT_35_TURBO.value:
+            self.cognitive_model = OpenAILanguageModel(
+                model_id=CognitiveModel.GPT_35_TURBO, agent_id=self.id,
+            )
         elif self.cognitive_model_id == CognitiveModel.LLAMA_2_70b.value:
             self.cognitive_model = LlamaLanguageModel(
                 model_id=CognitiveModel.LLAMA_2_70b, agent_id=self.id
