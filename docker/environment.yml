@@ -1,0 +1,20 @@
+name: base
+
+channels:
+  - conda-forge
+
+dependencies:
+  - black-jupyter
+  - jinja2
+  - openai
+  - pandas
+  - pip
+  - ploomber
+  - psycopg2
+  - python-dotenv
+  - pyyaml
+  - pydantic
+  - termcolor
+  - chromadb
+  - requests
+  - sqlalchemy
